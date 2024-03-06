@@ -11,7 +11,6 @@
 /phpunit.xml.dist           export-ignore
 /README.md                  export-ignore
 /resources/                 export-ignore
-/SECURITY.md                export-ignore
 /tests/                     export-ignore
 
 # We don't want Git to change the line endings in these files.

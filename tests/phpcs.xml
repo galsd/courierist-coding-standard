@@ -8,6 +8,6 @@
 
     <file>./Errors</file>
 
-    <rule ref="Ramsey"/>
+    <rule ref="Courierist"/>
 
 </ruleset>

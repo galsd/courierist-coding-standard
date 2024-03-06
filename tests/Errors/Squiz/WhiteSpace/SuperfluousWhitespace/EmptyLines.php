@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Ramsey\Test\CodingStandard\Errors\Squiz\WhiteSpace\SuperfluousWhitespace;
+namespace CodingStandard\Test\Errors\Squiz\WhiteSpace\SuperfluousWhitespace;
 
-class EmptyLines
+final class EmptyLines
 {
     public function foo(): void
     {

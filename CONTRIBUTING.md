@@ -10,7 +10,7 @@ code.
 
 You can find help and discussion in the following places:
 
-* GitHub Issues: <https://github.com/ramsey/coding-standard/issues>
+* GitHub Issues: <https://github.com/galsd/courierist-coding-standard/issues>
 
 ## Reporting Bugs
 
@@ -122,8 +122,8 @@ composer test
 CaptainHook will automatically run all tests before pushing to the remote
 repository.
 
-[github]: https://github.com/ramsey/coding-standard
-[issues]: https://github.com/ramsey/coding-standard/issues
-[pull requests]: https://github.com/ramsey/coding-standard/pulls
+[github]: https://github.com/galsd/courierist-coding-standard
+[issues]: https://github.com/galsd/courierist-coding-standard/issues
+[pull requests]: https://github.com/galsd/courierist-coding-standard/pulls
 [gh-flow]: https://guides.github.com/introduction/flow/
 [conventional commits]: https://www.conventionalcommits.org/

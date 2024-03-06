@@ -1,12 +1,32 @@
-# ramsey/coding-standard Changelog
+# Changelog
 
-All notable changes to this project will be documented in this file.
+Since this library is forked from ramsey/coding-standard there is no more "releases". Every version is ready to use.
 
-The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
-and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
+
+## 2024-03-07
+
+### Changed
+
+* Assign the library to Courierist Team.
+* Sort imports case-insensitive.
+* Forbid a whitespace after a type cast (cause PHPStorm does by default).
+* Forbid space after `fn` keyword (to follow PRE standard).
+* Remove spaces from union types.
+
+### Added
+
+* Require classes be ether abstract or final.
+
+### Removed
+
+* Do not require arrow functions.
+* Allow use of "Exception" and "Error" suffixes in class name.
 
 
 ## 2.2.0 - 2023-03-17
+
+### Changed
 
 * Set minimum PHP version to 8.1.
 

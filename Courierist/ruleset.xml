@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../vendor/squizlabs/php_codesniffer/phpcs.xsd" name="Ramsey">
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../vendor/squizlabs/php_codesniffer/phpcs.xsd" name="Courierist">
 
-    <description>A common coding standard for Ramsey's PHP libraries.</description>
+    <description>A common coding standard for Courierist code.</description>
 
     <!-- Rules -->
     <rule ref="PSR12"/>
@@ -36,8 +36,8 @@
     <!-- Forbid final methods in final classes -->
     <rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier"/>
 
-    <!-- Force whitespace after a type cast -->
-    <rule ref="Generic.Formatting.SpaceAfterCast"/>
+    <!-- Forbid whitespace after a type cast -->
+    <rule ref="Generic.Formatting.NoSpaceAfterCast"/>
 
     <!-- Forbid PHP 4 constructors -->
     <rule ref="Generic.NamingConventions.ConstructorName"/>
@@ -101,14 +101,8 @@
     <!-- Require comma after last element in a multi-line method/function declaration -->
     <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration"/>
 
-    <!-- Require arrow functions for simple functions. -->
-    <rule ref="SlevomatCodingStandard.Functions.RequireArrowFunction"/>
-
     <!-- Forbid the use of "Abstract" in an abstract class name (e.g., AbstractFoo) -->
     <rule ref="SlevomatCodingStandard.Classes.SuperfluousAbstractClassNaming"/>
-
-    <!-- Forbid the use of "Exception" in an exception class name (e.g., FooException) -->
-    <rule ref="SlevomatCodingStandard.Classes.SuperfluousExceptionNaming"/>
 
     <!-- Forbid the use of "Interface" in an interface name (e.g., FooInterface) -->
     <rule ref="SlevomatCodingStandard.Classes.SuperfluousInterfaceNaming"/>
@@ -148,6 +142,9 @@
             <property name="linesCountBetweenUses" value="0"/>
         </properties>
     </rule>
+
+    <!-- Require classes be ether abstract or final -->
+    <rule ref="SlevomatCodingStandard.Classes.RequireAbstractOrFinal" phpcs-only="true"/>
 
     <rule ref="SlevomatCodingStandard.Commenting.DocCommentSpacing">
         <properties>
@@ -237,7 +234,7 @@
     <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses">
         <properties>
             <property name="psr12Compatible" value="true"/>
-            <property name="caseSensitive" value="true"/>
+            <property name="caseSensitive" value="false"/>
         </properties>
     </rule>
 
@@ -376,8 +373,14 @@
     <!-- Require the return type hint to have one space (i.e. function foo(): ?int) -->
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
 
-    <!-- For arrow functions, require 1 space after the keyword and before/after the arrow -->
-    <rule ref="SlevomatCodingStandard.Functions.ArrowFunctionDeclaration"/>
+    <!-- Follow PRE standard for arrow functions -->
+    <rule ref="SlevomatCodingStandard.Functions.ArrowFunctionDeclaration">
+        <properties>
+            <property name="spacesCountAfterKeyword" value="0"/>
+            <property name="spacesCountBeforeArrow" value="1"/>
+            <property name="spacesCountAfterArrow" value="1"/>
+        </properties>
+    </rule>
 
     <!-- Forbid useless @var for constants -->
     <rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint"/>
@@ -447,7 +450,7 @@
 
     <rule ref="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat">
         <properties>
-            <property name="withSpaces" value="yes"/>
+            <property name="withSpaces" value="no"/>
             <property name="nullPosition" value="last"/>
         </properties>
     </rule>

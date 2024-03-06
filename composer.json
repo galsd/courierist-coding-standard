@@ -1,6 +1,6 @@
 {
-    "name": "ramsey/coding-standard",
-    "description": "A common coding standard for Ramsey's PHP libraries.",
+    "name": "galsd/courierist-coding-standard",
+    "description": "A common coding standard for Courierist code.",
     "license": "MIT",
     "type": "phpcodesniffer-standard",
     "keywords": [
@@ -11,22 +11,20 @@
     ],
     "authors": [
         {
+            "name": "Courierist Team",
+            "email": "info@courierist.ru",
+            "homepage": "https://courierist.ru"
+        },
+        {
             "name": "Ben Ramsey",
             "email": "ben@benramsey.com",
             "homepage": "https://benramsey.com"
         }
     ],
-    "homepage": "https://github.com/ramsey/coding-standard",
+    "homepage": "https://github.com/galsd/courierist-coding-standard",
     "support": {
-        "issues": "https://github.com/ramsey/coding-standard/issues",
-        "security": "https://github.com/ramsey/coding-standard/security/policy"
+        "issues": "https://github.com/galsd/courierist-coding-standard/issues"
     },
-    "funding": [
-        {
-            "type": "github",
-            "url": "https://github.com/sponsors/ramsey"
-        }
-    ],
     "require": {
         "php": "^8.1",
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
@@ -45,14 +43,14 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Ramsey\\Test\\CodingStandard\\": "tests/"
+            "CodingStandard\\Test\\": "tests/"
         }
     },
     "config": {
         "allow-plugins": {
             "captainhook/plugin-composer": true,
-            "ergebnis/composer-normalize": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "ergebnis/composer-normalize": true
         },
         "sort-packages": true
     },

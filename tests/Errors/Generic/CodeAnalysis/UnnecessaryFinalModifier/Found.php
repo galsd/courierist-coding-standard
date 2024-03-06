@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ramsey\Test\CodingStandard\Errors\Generic\CodeAnalysis\UnnecessaryFinalModifier;
+namespace CodingStandard\Test\Errors\Generic\CodeAnalysis\UnnecessaryFinalModifier;
 
 final class Found
 {
