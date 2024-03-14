@@ -5,6 +5,7 @@
     <arg name="no-colors"/>
     <arg value="sq"/>
     <arg name="report" value="source"/>
+    <arg name="report-width" value="120"/>
 
     <file>./Errors</file>
 
