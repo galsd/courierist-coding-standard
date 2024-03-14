@@ -5,10 +5,10 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/galsd/courierist-coding-standard"><img src="https://img.shields.io/badge/source-ramsey/coding--standard-blue.svg?style=flat-square" alt="Source Code"></a>
-    <a href="https://packagist.org/packages/galsd/courierist-coding-standard"><img src="https://img.shields.io/packagist/v/galsd/courierist-coding-standard.svg?style=flat-square&label=release" alt="Download Package"></a>
-    <a href="https://php.net"><img src="https://img.shields.io/packagist/php-v/galsd/courierist-coding-standard.svg?style=flat-square&colorB=%238892BF" alt="PHP Programming Language"></a>
-    <a href="https://github.com/galsd/courierist-coding-standard/blob/master/LICENSE"><img src="https://img.shields.io/packagist/l/galsd/courierist-coding-standard.svg?style=flat-square&colorB=darkcyan" alt="Read License"></a>
+    <a href="https://github.com/galsd/courierist-coding-standard"><img src="https://img.shields.io/badge/source-galsd/courierist--coding--standard-blue.svg?style=flat-square" alt="Source Code"></a>
+    <a href="https://packagist.org/packages/galsd/courierist-coding-standard"><img src="https://img.shields.io/packagist/dt/galsd/courierist-coding-standard.svg?style=flat-square" alt="Download Package"></a>
+    <a href="https://php.net"><img src="https://img.shields.io/packagist/dependency-v/galsd/courierist-coding-standard/php.svg?version=dev-main&style=flat-square&colorB=%238892BF" alt="PHP Programming Language"></a>
+    <a href="https://github.com/galsd/courierist-coding-standard/blob/main/LICENSE"><img src="https://img.shields.io/github/license/galsd/courierist-coding-standard.svg?style=flat-square&colorB=darkcyan" alt="Read License"></a>
     <a href="https://github.com/galsd/courierist-coding-standard/actions/workflows/continuous-integration.yml"><img src="https://img.shields.io/github/actions/workflow/status/galsd/courierist-coding-standard/continuous-integration.yml?branch=main&style=flat-square&logo=github" alt="Build Status"></a>
 </p>
 
