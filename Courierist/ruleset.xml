@@ -153,9 +153,9 @@
             <property name="linesCountBetweenDescriptionAndAnnotations" value="1"/>
             <property name="linesCountBetweenAnnotationsGroups" value="1"/>
             <property name="annotationsGroups" type="array">
-                <element value="@internal,@deprecated,"/>
-                <element value="@link,@see,@uses,"/>
-                <element value="@param"/>
+                <element value="@internal,@deprecated"/>
+                <element value="@link,@see,@uses"/>
+                <element value="@param,@property,@property-read,@property-write"/>
                 <element value="@return"/>
                 <element value="@throws"/>
             </property>
